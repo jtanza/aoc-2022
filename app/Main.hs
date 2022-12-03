@@ -1,8 +1,9 @@
 module Main (main) where
 
-import Lib
-import One
-import Two
+import Lib ( printResult, toTuples )
+import One ( one, one' )
+import Two ( two )
+import Three (three)
 
 main :: IO ()
 main = do
@@ -11,3 +12,5 @@ main = do
   Lib.printResult "1" "2" (One.one' oneInput)
   twoInput <- readFile "input/two.txt"
   Lib.printResult "2" "1" (Two.two (Lib.toTuples twoInput))
+  threeInput <- readFile "input/three.txt"
+  Lib.printResult "3" "1" (Three.three threeInput)
