@@ -1,6 +1,6 @@
 module Four where
-import Data.List (sort)
-import Data.List.Split (splitOn)
+import           Data.List       (sort)
+import           Data.List.Split (splitOn)
 
 four :: String -> Int
 four = sum . map (fromEnum . inRange . sort) . parse . lines

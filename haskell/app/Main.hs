@@ -17,3 +17,5 @@ main = do
   Lib.printResult "3" "1" (Three.three threeInput)
   fourInput <- readFile "input/four.txt"
   Lib.printResult "4" "1" (Four.four fourInput)
+  fiveInput <- readFile "input/five.txt"
+  print (lines fiveInput)

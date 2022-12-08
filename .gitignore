@@ -1,3 +1,4 @@
-.stack-work/
-*~
-input/
+haskell/.stack-work/
+haskel/*~
+haskell/input/
+clojure/aoc-2022/resources/input
